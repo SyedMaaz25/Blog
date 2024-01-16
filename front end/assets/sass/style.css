@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "syne-bold";
+  src: url(../font/syne/Syne-Bold.ttf);
+}
+@font-face {
+  font-family: "syne-extrabold";
+  src: url(../font/syne/Syne-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "syne-regular";
+  src: url(../font/syne/Syne-Regular.ttf);
+}
+.circle-container {
+  display: flex;
+  align-items: center;
+}
+.circle-container .circle {
+  border-radius: 100%;
+  border: 1px solid lightgray;
+  padding: 1.2rem 1.2rem;
+  transition: all 0.5s ease;
+}
+.circle-container .circle:hover {
+  cursor: pointer;
+}
+.circle-container button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "syne-regular";
+}
+.circle-container button a {
+  text-decoration: none;
+  color: #18191d;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #18191d;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+nav a h3 {
+  font-family: "syne-bold";
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.form-container h1,
+.form-container h4,
+.form-container h2,
+.form-container h6 {
+  font-family: "syne-bold";
+}
+.form-container input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+  padding: 1rem 0rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s;
+}
+.form-container input::-moz-placeholder {
+  font-family: "syne-regular";
+}
+.form-container input::placeholder {
+  font-family: "syne-regular";
+}
+.form-container input:focus {
+  border-bottom: 2px solid #18191d;
+}
+
+.blog-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-container h1,
+.blog-container h4,
+.blog-container h2,
+.blog-container h6 {
+  font-family: "syne-bold";
+}
+.blog-container input,
+.blog-container textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0;
+  padding: 1rem 0rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s;
+}
+.blog-container input::-moz-placeholder, .blog-container textarea::-moz-placeholder {
+  font-family: "syne-regular";
+}
+.blog-container input::placeholder,
+.blog-container textarea::placeholder {
+  font-family: "syne-regular";
+}
+.blog-container input:focus,
+.blog-container textarea:focus {
+  border-bottom: 2px solid #18191d;
+}
+
+.card h4 {
+  font-family: "syne-bold";
+}
+.card p {
+  font-family: "syne-regular";
+}
+.card .fa-brands,
+.card .fa-solid,
+.card .fa-sharp {
+  font-size: 1.1rem;
+  color: #000;
+}
+.card button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "syne-regular";
+}
+
+.single-blog-container h3 {
+  font-family: "syne-bold";
+}
+.single-blog-container p {
+  font-family: "syne-regular";
+}
+
+.alert-danger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  input,
+  textarea {
+    padding: 1rem 0rem;
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=style.css.map */
