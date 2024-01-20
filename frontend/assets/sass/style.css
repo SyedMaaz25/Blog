@@ -40,6 +40,23 @@
   color: #18191d;
 }
 
+h1,
+h2,
+h4,
+h3,
+h6 {
+  font-family: "syne-bold";
+}
+
+p,
+a,
+span,
+ul,
+ol,
+li {
+  font-family: "syne-regular";
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -62,21 +79,11 @@
   background: #000;
 }
 
-nav a h3 {
-  font-family: "syne-bold";
-}
-
 .form-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-.form-container h1,
-.form-container h4,
-.form-container h2,
-.form-container h6 {
-  font-family: "syne-bold";
 }
 .form-container input {
   background: none;
@@ -102,41 +109,52 @@ nav a h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.blog-container h1,
-.blog-container h4,
-.blog-container h2,
-.blog-container h6 {
-  font-family: "syne-bold";
+  color: #fff;
+  background-color: #0c0c0c;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 7px;
 }
 .blog-container input,
 .blog-container textarea {
   background: none;
   border: none;
-  border-bottom: 1px solid lightgray;
+  position: relative;
+  border-bottom: 2px solid #fff;
   border-radius: 0;
   padding: 1rem 0rem;
   width: 100%;
   outline: none;
   transition: all 0.3s;
+  color: #fff;
 }
 .blog-container input::-moz-placeholder, .blog-container textarea::-moz-placeholder {
   font-family: "syne-regular";
+  color: #fff;
 }
 .blog-container input::placeholder,
 .blog-container textarea::placeholder {
   font-family: "syne-regular";
+  color: #fff;
 }
 .blog-container input:focus,
 .blog-container textarea:focus {
-  border-bottom: 2px solid #18191d;
+  border-bottom: 2px solid maroon;
+}
+.blog-container #submit-blog {
+  color: #fff;
 }
 
-.card h4 {
-  font-family: "syne-bold";
+.card {
+  border: none;
 }
-.card p {
-  font-family: "syne-regular";
+.card .card-body {
+  padding: 1.8rem 1rem;
+  background-color: #000;
+  color: #fff;
+}
+.card .delete {
+  color: maroon;
+  font-weight: bold;
 }
 .card .fa-brands,
 .card .fa-solid,
@@ -149,20 +167,89 @@ nav a h3 {
   border: none;
   background-color: transparent;
   font-family: "syne-regular";
-}
-
-.single-blog-container h3 {
-  font-family: "syne-bold";
-}
-.single-blog-container p {
-  font-family: "syne-regular";
+  color: #fff;
 }
 
 .alert-danger {
   display: none;
+  background-color: maroon;
+  border: none;
+  color: #fff;
+  font-family: "syne-bold";
+}
+
+.comment-form-container .profile {
+  border-radius: 100px;
+  background-color: lightgray;
+  padding: 1.2rem;
+  color: #fff;
+}
+.comment-form-container .fa-trash,
+.comment-form-container .fa-pen {
+  font-size: 1.3rem;
+  color: #000;
+}
+.comment-form-container .fa-ellipsis {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.comment-form-container ul li {
+  font-size: 1.1rem;
+}
+.comment-form-container .dropdown-item {
+  cursor: pointer;
+}
+.comment-form-container input,
+.comment-form-container textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  border-radius: 0;
+  padding: 1rem 0rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s;
+}
+.comment-form-container input::-moz-placeholder, .comment-form-container textarea::-moz-placeholder {
+  font-family: "syne-regular";
+}
+.comment-form-container input::placeholder,
+.comment-form-container textarea::placeholder {
+  font-family: "syne-regular";
+}
+.comment-form-container input:focus,
+.comment-form-container textarea:focus {
+  border-bottom: 2px solid maroon;
+}
+
+footer input,
+footer textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  border-radius: 0;
+  padding: 1rem 0rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s;
+}
+footer input::-moz-placeholder, footer textarea::-moz-placeholder {
+  font-family: "syne-regular";
+}
+footer input::placeholder,
+footer textarea::placeholder {
+  font-family: "syne-regular";
+}
+footer input:focus,
+footer textarea:focus {
+  border-bottom: 2px solid maroon;
 }
 
 @media (max-width: 767px) {
+  .blog-container {
+    border-radius: 0px;
+    margin: 0 !important;
+  }
   input,
   textarea {
     padding: 1rem 0rem;

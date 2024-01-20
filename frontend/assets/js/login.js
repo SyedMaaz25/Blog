@@ -44,4 +44,6 @@ const handleLocalStorage = (userDetails) => {
   storedUsers.push(userDetails);
   localStorage.setItem("users", JSON.stringify(storedUsers));
   window.location.replace("blog.html");
+  const storeName = storedUsers[0].firstName;
+  localStorage.setItem("name",JSON.stringify(storeName))
 };

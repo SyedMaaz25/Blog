@@ -40,7 +40,7 @@ const displayBlog = () => {
   const getBlog = JSON.parse(localStorage.getItem("blog")) || [];
   const blogHtml = getBlog.map(({ id, image, name, description, longDescription }) => {
       const blogDetails = { id, image, name, description, longDescription };
-      return `<div class="col-12 col-sm-6 col-md-5 col-lg-4 pb-md-4 pb-2 g-3">
+      return `<div class="col-12 col-sm-6 col-md-5 col-lg-4 pb-md-1 pb-2 g-3">
       <div class="card">
         <img src="${image}" class="card-img-top img-fluid blog-image" alt=${name}>
         <div class="card-body">
@@ -48,8 +48,10 @@ const displayBlog = () => {
           <p class="card-text">${description}</p>
           <div class="d-flex align-items-center gap-3">
           <button class="card-text my-0 py-0" onclick="handleReadMore(${id})">Read More</button>
-          <button class="card-text my-0 py-0" onclick="handleDelete(${id})">Delete</button>
-          <button class="card-text my-0 py-0" onclick='handleUpdateInputFields(${ JSON.stringify( blogDetails )})'>Update</button>
+          <button class="card-text my-0 py-0" onclick='handleUpdateInputFields(${JSON.stringify(
+            blogDetails
+          )})'>Update</button>
+          <button class="card-text my-0 py-0 delete" onclick="handleDelete(${id})">Delete</button>
           </div>
         </div>
       </div>
@@ -137,9 +139,7 @@ const handleUpdateDb = async (id, updatedUserBlog) => {
 
 const updateLocalStorage = (updatedUserBlog) => {
   const getBlog = JSON.parse(localStorage.getItem("blog")) || [];
-  const updatedBlogIndex = getBlog.findIndex(
-    (blog) => blog.id === updatedUserBlog.id
-  );
+  const updatedBlogIndex = getBlog.findIndex((blog) => blog.id === updatedUserBlog.id);
   if (updatedBlogIndex !== -1) {
     getBlog[updatedBlogIndex] = updatedUserBlog;
     localStorage.setItem("blog", JSON.stringify(getBlog));
