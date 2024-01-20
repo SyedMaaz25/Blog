@@ -63,14 +63,7 @@
       "id": 12
     }
   ],
-  "users": [
-    {
-      "firstName": "Syed Maaz",
-      "email": "suyedmuhummadmaaz@gmail.com",
-      "password": "d",
-      "id": 1
-    }
-  ],
+  "users": [],
   "comments": [
     {
       "message": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing",
