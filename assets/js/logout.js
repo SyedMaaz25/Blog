@@ -7,7 +7,7 @@ const handleLogout = async () => {
       method: "DELETE",
     });
     localStorage.removeItem("users");
-    window.location.replace("login.html");
+    window.location.replace("index.html");
   } catch (error) {
     throw error;
   }
