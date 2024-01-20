@@ -1,5 +1,55 @@
 {
-  "posts": [],
-  "users": [],
+  "posts": [
+    {
+      "name": "Red Shadow",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n",
+      "image": "https://cdn.pixabay.com/photo/2021/03/02/16/34/woman-6063087_1280.jpg",
+      "id": 1
+    },
+    {
+      "name": "Green Shade",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n",
+      "image": "https://cdn.pixabay.com/photo/2020/05/03/07/43/green-5124174_1280.jpg",
+      "id": 2
+    },
+    {
+      "name": "Dark Vibe",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n",
+      "image": "https://images.unsplash.com/photo-1457732815361-daa98277e9c8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdpcmwlMjBkYXJrfGVufDB8fDB8fHww",
+      "id": 3
+    },
+    {
+      "name": "Red Shadow",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n",
+      "image": "https://images.unsplash.com/photo-1637961239560-4b44bf7de1ec?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 4
+    },
+    {
+      "name": "Dark Shade",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n",
+      "image": "https://c1.wallpaperflare.com/preview/219/88/985/darkness-emotional-portrait-male.jpg",
+      "id": 5
+    },
+    {
+      "name": "Red Hood",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n",
+      "image": "https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?cs=srgb&dl=pexels-elti-meshau-333850.jpg&fm=jpg",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Syed Maaz",
+      "email": "suyedmuhummadmaaz@gmail.com",
+      "password": "SmDev",
+      "id": 1
+    }
+  ],
   "comments": []
 }

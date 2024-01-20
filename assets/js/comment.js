@@ -5,6 +5,7 @@ const handleComment = () => {
   const blogComments = {};
   input.forEach((input) => {
     blogComments[input.id] = input.value;
+    input.value = ""
   });
   handleDb(blogComments);
 };
